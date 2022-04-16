@@ -1,0 +1,61 @@
+.imige-block{
+	position: relative;
+	width: 600px;
+	
+}
+.block2{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 700px;
+	left: 0px;
+	animation: mario 3s infinite alternate ease-in-out 2s;
+}
+.block3{
+	position: absolute;
+	width: 100px;
+	height: 90px;
+	top: 30px;
+	left: 500px;
+	animation: box 2s alternate infinite ease-out 3s ;
+}
+.imige{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+}
+@keyframes mario {
+	15%{transform: translateX(200px);}
+	25%{transform: translateX(300px); }
+	50%{transform: translateX(400px);}
+	75%{transform: translateX(700px);}
+	100%{transform: translateY(-700px) rotate(-60deg);}
+
+}
+@keyframes box {
+	0%{transform: translateY(10px);}
+	25%{transform: translateY(100px);}
+	50%{transform: translateY(200px);}
+	75%{transform: translateY(300px);}
+	100%{transform: translateY(600px);}
+}
+.block4{
+	width: 80px;
+	position: absolute;
+	top: 70px;
+	left: 150px;
+	animation: batter 1s alternate infinite;
+}
+.block5{
+	width: 80px;
+	position: absolute;
+	top: 80px;
+	right: 100px;
+	animation: batter 2s infinite alternate;
+}
+@keyframes batter {
+	0%{transform: translate(10px);}
+	40%{transform: translateX(50px);}
+	70%{transform: translateX(250px) rotate(36deg); }
+	100%{transform: translateX(400px);}
+}
